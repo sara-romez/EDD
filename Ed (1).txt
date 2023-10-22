@@ -1,0 +1,275 @@
+TEMA 1 
+Elementos de desarrollo de software 
+
+1. Conceptos básicos 
+
+1.1. Tipos de software
+	Software: es la parte lógica de un ordenador (no se puede tocar)
+	Hardware: es la parte física de un ordenador (se puede tocar) 
+
+	-Software de sistema: es el soporte que controla e interactúa con el hardware y administra los recursos. (sistema operativo, driver/controladores) 
+
+	-Software de aplicación: sirve para hacer tareas complejas a alto nivel. 
+(suite informática, navegador, edición de imagen… )
+
+	-Software de desarrollo: sirve para desarrollar otro software. 
+(editores de texto, compiladores, intérpretes… )
+
+Los drivers son los controladores de dispositivos. 
+Los compiladores generan un archivo ejecutable. 
+
+
+1.2. Relación hardware-software
+	-CPU: Unidad Central de Proceso. Toma datos, ejecuta las instrucciones y devuelve los datos. (procesador y microprocesador)
+
+	-Memoria RAM: guarda temporalmente archivos ejecutables. Es la memoria principal que al apagar el ordenador pierde la información guardada. 
+
+	-Disco duro: guarda de forma permanente archivos ejecutables. Es la memoria secundaria o almacenamiento masivo. 
+
+	-E/S: los periféricos de entrada y salida recogen datos, se leen  y se guardan en la memoria secundaria. Por ejemplo, el ratón o el teclado son periféricos de entrada mientras que el monitor o los cascos son de salida. 
+
+
+Cuando ejecutas algún programa en el ordenador el sistema operativo le manda la orden a la CPU y esta busca primero la información en la memoria principal, es decir la memoria RAM que es más rápida pero no es permanente ya que cuando le quitas la corriente al ordenador esta memoria se reinicia borrando los datos que tenía. Por otro lado, si es la primera vez que abres el programa desde el encendido del ordenador, la información no está en el memoria RAM (ya que es temporal) sino que está en la memoria secundaria o almacenamiento masivo (que si es permanente) por lo que el programa tarda más en abrirse. Si la información no está en la memoria RAM y se tiene que coger de la memoria secundaria, la información se traspasa a la memoria principal y luego a la CPU.
+
+
+1.3. Código fuente, objeto y ejecutable. 
+
+	-Código fuente: es un archivo de texto escrito en un lenguaje de programación que se puede seguir editando. (por ejemplo Java o C ++).
+
+	-Código objeto: es un paso intermedio en el que el archivo todavía no es ejecutable pero ya está terminado. 
+
+	-Código ejecutable: es el archivo ejecutable del programa. Está escrito traducido a lenguaje máquina para que lo pueda leer y ejecutarlo. 
+
+En los lenguajes interpretados no existe ni código objeto, ni código binario, sólo existe el código fuente porque mientras se compila se traduce a lenguaje máquina. 
+
+
+2. Ciclo de vida del software
+
+2.1. Ingeniería del software
+Estudia los principios y metodologías para el desarrollo y mantenimiento de sistemas software. 
+
+2.2. Desarrollo de software
+
+Análisis: establecer los requisitos del programa, es decir, lo que tiene que hacer el programa. Especificar y darle forma a la idea del programa. 
+
+Algunos requisitos son: 
+	-Completo y sin omisiones
+	-Conciso y sin trivialidades
+	-Evitar ambigüedades
+	-Ser entendible para el cliente
+	-Evitar detalles de diseño
+	-Dividir y jerarquizar el modelo
+	-Separar entre requisito funcional (un requisito del cliente que tenga una función en el código como darle a un botón que active algo) y no funcional (algo de diseño estético).  
+
+Diseño: En este paso se diseña la idea del proyecto. También se especifica la relación y funcionalidad de los elementos. 
+
+	-Diseño arquitectónico
+	-Diseño detallado
+	-Diseño de datos
+	-Diseño de interfaz de usuario
+
+Codificación: se escribe el código fuente. Pueden usarse diferentes lenguajes informáticos. 
+
+Pruebas: el objetivo de las pruebas es que el programa falle para poder corregir los errores. 
+
+Mantenimiento: se basa en que mientras el proyecto está en el mercado se van arreglando cosas y mejorando otras. Hay diferentes tipos de mantenimiento:
+
+	-Correctivo: se corrigen los defectos que se encuentren
+	-Perfectivo: se mejora la funcionalidad de los elementos y no se añaden funciones nuevas. 
+	-Evolutivo: se añaden funcionalidades nuevas. 
+	-Adaptativo: se adapta a nuevos entornos. 
+
+Resultado tras cada fase: 
+	-Análisis: se especifican los requisitos del software. 
+	-Diseño: se obtiene el documento de la arquitectura del software y se especifican los módulos y funciones. 
+	-Codificación: se obtiene el código fuente.
+	-Prueba: se comprueba que funcione correctamente. 
+	-Mantenimiento: se obtienen informes de errores y control de cambios. 
+
+
+3. Modelo de desarrollo
+Para el proceso de desarrollo de software existen muchos modelos de trabajo: 
+
+-Modelos clásicos:
+	-Modelo en cascada: se sigue el orden de los pasos sin poder adelantar trabajo. 
+
+	-Modelo en v: se puede adelantar trabajo de un paso mientras se está en otro. Es más dinámico. 
+
+-Modelo de construcción de prototipos: se diseña el programa sin ninguna funcionalidad con algún programa de diseño. 
+
+-Modelos evolutivos: 
+	-Modelo en espiral: en cada etapa se mejora el software y hay una retroalimentación constante. 
+	-Metodologías ágiles: son diferentes métodos con los que el trabajo se hace mejor y más rápido. Permiten reaccionar mejor 
+
+3.1. Modelo en cascada
+Se sigue el orden de los pasos sin poder adelantar trabajo. 
+
+	-Modelo de mayor antigüedad
+	-Identifica las fases principales del desarrollo software
+	-Las fases han de realizarse en el orden indicado. 
+	-El resultado de una fase es la entrada de la siguiente. 
+	-Es un modelo bastante rígido que se adapta mal al cambio continuo de especificaciones. 
+	-Existen diferentes variantes con mayor o menor cantidad de actividades. 
+
+3.2. Modelo en V
+Se puede adelantar trabajo de un paso mientras se está en otro. Es más dinámico.
+
+	-Modelo muy parecido al modelo en cascada. 
+	-Visión jerarquizada con distintos niveles. 
+	-Los niveles superiores indican mayor abstracción.
+ 	-Los niveles inferiores indican mayor nivel de detalle.
+ 	-El resultado de una fase es la entrada de la siguiente fase.
+ 	-Existen diferentes variantes con mayor o menor cantidad de actividades
+
+3.3. Modelo de construcción de prototipos
+Se crea un prototipo del software  sin funcionalidad durante la fase de análisis y se le muestra al cliente. Se repite esto las veces necesarias. 
+
+3.4. Modelo en espiral
+El modelo en espiral tiene varias etapas dentro de las cuales se lleva a cabo todo el proceso del ciclo de vida del software. Cada vez que se termina una etapa se le comunica al cliente y ahí empieza la siguiente etapa, de forma que hay una retroalimentación constante entre el cliente y los desarrolladores para comprobar que todo está como se quiere antes de seguir avanzando. Este proceso se termina cuando ya no se tengan que hacer más mejoras y el proyecto esté validado por el cliente.
+
+3.5. Metodologías ágiles. 
+
+Son métodos de ingeniería del software con los que el trabajo se hace mejor y más rápido. Permiten reaccionar a los cambios de especificaciones con mayor facilidad durante el proceso. El trabajo lo realizan equipos auto-organizados y multidisciplinarios. Se hacen validaciones cada poco tiempo para comprobar que todo esté bien. 
+
+	-Individuos e interacciones sobre procesos y herramientas: Se usan herramientas y procesos concretos y todo el equipo está informado de todo.
+
+	-Software funcionando sobre documentación extensiva: hay documentación de todos los cambios que hay durante el proceso. 
+
+	-Colaboración con el cliente sobre negociación contractual: se colabora con el cliente activamente en el proyecto. 
+
+	-Respuesta ante el cambio sobre seguir el plan: tienen una respuesta rápida a los cambios imprevistos. 
+
+3.5.1. Kanban 
+
+A este método también se le llama sistema de tarjetas.   
+ 
+Controla por demanda la fabricación de los productos necesarios en la cantidad y tiempo necesarios. Este método está enfocado a entregar la máxima calidad al cliente usando los recursos justos. 
+
+
+3.5.2. Scrum
+
+Es un modelo de desarrollo que se basa en la colaboración para obtener resultados óptimos en los proyectos. Se hacen entregas parciales y regulares del producto al cliente para ver como va el proyecto y poder entregar el mejor producto posible. Esta metodología se enfoca sobre todo en mejorar la eficiencia y la calidad del producto. 
+
+-Roles principales
+	
+	-Product owner: define los criterios de aceptación y se asegura de que se cumplan. Es la persona que se encarga de hablar con el cliente. 
+
+	-Scrum master: se asegura de que se cumpla el plan de desarrollo y motiva y facilita el trabajo del equipo. 
+
+	-Team: es el equipo de desarrollo de entre 6 y 10 miembros.  
+
+-Elementos
+	
+	-Product backlog: es una lista ordenada de los requisitos del producto. 
+	
+	-Sprint backlog: es una lista de requisitos prioritarios sacada del product backlog para su desarrollo durante el sprint.
+
+	-Incremento: es el estado del producto después de cada sprint. 
+
+-Eventos
+	
+	-Sprint:es el evento principal en el que están contenidos el resto de eventos. 
+
+	-Sprint planning: es la reunión inicial donde se planifica el trabajo. 
+
+	-Daily scrum: es una reunión diaria para poner en común los problemas que hay y poder darles una solución.  
+	
+	-Scrum review: es la reunión final donde se evalúa el incremento que se ha obtenido. 
+
+	-Scrum retrospective: es la reunión final donde se evalúa la correcta aplicación del método scrum. 
+
+
+4. Lenguajes de programación
+
+4.1. Obtención de código ejecutable
+
+	Para obtener código binario ejecutable hay 2 opciones: 
+		-Compilar: es traducir el programa a lenguaje máquina convirtiéndolo en instrucciones que el ordenador puede entender.
+
+		-Interpretar: un programa es hacer que se traduzca a lenguaje máquina pero línea por línea.
+
+4.2. Proceso de compilación/interpretación
+	
+	La compilación/interpretación del código fuente se hace en 2 fases:
+		-Análisis léxico: se comprueba si las palabras reservadas para el lenguaje de programación usado están bien escritas. 
+
+		-Análisis sintáctico: se comprueba si lo que está escrito tiene sentido. 
+
+4.3. Lenguajes compilados 
+	
+	Un ejemplo de lenguaje compilado es el lenguaje de programación C/C++, aunque también hay otros como Fortran, Ada o Pascal. 
+	
+	Su principal ventaja es que tiene un ejecución eficiente porque administra todos sus recursos, pero también:
+		-Son más seguros 
+		-Algunos lenguajes compilados tiene facilidad de portabilidad 
+		-Mejora la calidad del software 
+
+Su principal desventaja es que es necesario compilar el código cada vez que se modifica por lo que, en realidad, no es tan eficiente como se dice. 
+
+4.4. Lenguajes interpretados
+	
+	Algunos ejemplos de lenguaje interpretado son el lenguaje de programación PHP, JavaScript, Python o MATLAB.
+
+		Algunas de las ventajas son: 
+		-Son más portables
+		-Tienen un desarrollo más rápido
+		-Son más flexibles
+		-Suelen tener una sintaxis más legible 
+
+Su principal desventaja es que tiene una ejecución menos eficiente. 
+
+4.5. JAVA 
+
+	Es un lenguaje compilado e interpretado, el código fuente de Java se compila, pero de eso se obtiene un código binario intermedio que se llama ByteCode. Se le puede llamar código objeto pero en realidad está destinado a usarse en una máquina virtual de Java específica para cada sistema operativo y después el ByteCode se interpreta en esa máquina virtual para ejecutarlo. 
+
+	Ventajas:
+		-Es un lenguaje de programación estructurado y orientado a objetos. 
+		-Es un lenguaje “fácil de aprender”.
+		-Con este lenguaje de programación se consigue una buena documentación y base de usuario
+
+	Desventajas: 
+		-Es menos eficiente que los lenguajes compilados. 
+
+4.6. Tipos de lenguajes de programación. 
+
+	-Según la forma en la operan: 
+		-Declarativos: se le indica al programa el resultado que queremos obtener pero sin especificar los pasos para conseguir dicho resultado. Suelen ser lenguajes interpretados. 
+	
+			-Lógicos: usan reglas, como Prolog.
+			-Funcionales: usan funciones, como Lisp o Haskell.
+			-Algebraicos: usan sentencias, como SQL.
+
+		-Imperativos: se le indican los pasos que debe seguir el programa para conseguir el resultado que queremos. La mayoría son compilados. 
+			
+			-Estructurados: los lenguajes de este tipo siguen unas reglas y unos pasos ordenados para que la máquina entienda lo que quieres que haga, como el lenguaje C. 
+
+			-Orientado a objetos: se organizan las partes del programa en grupos (objetos), cada grupo tiene sus propias reglas. Un ejemplo es Java.
+
+			-Multiparadigma: son lenguajes que combinan diferentes formas de hacer el código, como C++ o JavaScript. 
+	
+	-Según el nivel de abstracción: 
+		
+		-Bajo nivel: ensamblador
+
+		-Medio nivel: C
+
+		-Alto nivel: C++, Java	
+
+4.7. Criterios para elegir un lenguaje.
+
+	-Campo de aplicación: elegir el lenguaje según el proyecto que vayas a llevar a cabo. 
+	
+	-Experiencia previa: a ser posible, escoger un lenguaje con el que ya hayas trabajado.
+
+	-Herramientas de desarrollo: hay que tener en cuenta las herramientas que se van a usar para desarrollar el programa. 
+
+	-Documentación disponible: hay que buscar toda la documentación que haya sobre el lenguaje que se ha elegido. 
+
+	-Base de usuarios: hay que tener en cuenta quien va a usar ese programa en el futuro, si va a ser para una empresa de contabilidad o va a ser una red social. 
+
+	-Reusabilidad: elegir un lenguaje de programación con el que puedas reutilizar alguna parte del código para crear otro código diferente sin tener que empezar de nuevo. 
+
+	-Portabilidad: el lenguaje de programación tiene que funcionar de forma que el programa se ejecute bien en cualquier dispositivo, ya sea ordenador, tablet o teléfono. 
+
+	-Imposición del cliente: ante todo primero está la decisión del cliente de cómo quiere llevar a cabo el proyecto. 
+
