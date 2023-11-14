@@ -1,0 +1,120 @@
+TEMA 2 
+Entornos integrados de desarrollo
+
+1. Herramientas básicas 
+	1.1. Básicos
+
+		Editor de texto: permite escribir código fuente 
+
+		Compilador:  para traducir el código fuente de lenguaje de programación a lenguaje máquina. La parte mala del compilador es que traduce el código entero de una sola vez, por lo que si detecta un fallo tienes que corregirlo y compilar otra vez todo el código. Produce el código objeto. 
+
+		Enlazador: es un programa que coge los objetos que se generan en la compilación y los recursos que necesita de las bibliotecas disponibles y enlaza el código objeto con las bibliotecas que se hayan usado. El archivo que produce este proceso es el código ejecutable. 
+
+		Intérprete: es un programa que traduce el código fuente de lenguaje de programación a lenguaje máquina mientras se ejecuta. No produce ningún archivo independiente. 
+
+	1.2. Bibliotecas
+
+		Son conjuntos de funciones y rutinas predefinidas que se utilizan en programas informáticos. Proporcionan a los programadores una interfaz para hacer tareas comunes sin tener que escribir el código desde cero.  
+
+			-Biblioteca estándar: son bibliotecas que están en la especificación del lenguaje de programación y están disponibles para todos los programas escritos en ese lenguaje. 
+
+			-Bibliotecas adicionales: son bibliotecas desarrolladas por terceros que amplían las capacidades de un programa. Abordan necesidades específicas y proporcionan funcionalidades adicionales. 
+
+		Las bibliotecas pueden ser: 
+			-Bibliotecas dinámicas
+			-Bibliotecas estáticas
+	
+		Las partes de una biblioteca son: 
+			-Especificación (ofrece una API)
+			-Implementación
+			API (Interfaz de Programación de Aplicaciones)
+
+		a) Biblioteca estándar del lenguaje C, contiene: 
+			-Entrada y salida por terminal
+			-Manejo de archivos
+			-Funciones matemáticas
+
+		b) Biblioteca estándar del lenguaje java, contiene: 
+			-Entrada y salida por terminal
+			-Manejo de archivos
+			-Funciones matemáticas
+			-Interfaz gráfico
+			-Red
+			-Bases de datos
+			-Gráficos (solo en 2D)
+
+	1.3. Entornos necesarios en Java
+
+		a) JRE: es necesario para ejecutar los programas. Contiene: 
+			- JVM (intérprete de Java)
+			- Biblioteca estándar
+
+		b) JDK: es necesario para desarrollar programas. Contiene: 
+			-Herramientas: javac, jar, javadoc, … 
+
+
+	1.4. Build (construir) = compilar + enlazar
+
+		Es el proceso de compilar y enlazar los archivos fuente y recursos de un programa en un conjunto ejecutable.
+
+		Hay dos opciones: 
+			1. Herramientas de construcción:
+				-make, ninja (C, C++)
+				-ant, maven, gradle (Java)
+				-grunt, gulp (Javascript)
+				-rake (ruby)
+				
+				a) Archivos de construcción (buildfiles):
+					-make: Makefile
+					-ninja: build.ninja
+					-ant: build.xml
+					-maven: pom.xml
+					-gradle: build.gradle
+					-grunt: Gruntfile.js
+					-gulp: gulpfile.js
+					-rake: Rakefile
+
+				b) Generadores de archivos de construcción: 
+					-CMAKE: CMakeLists.txt
+					-Meson: meson.build
+
+			2. Servidores de construcción: 
+				-Jenkins
+				-TravisCI
+				-CircleCI
+				-Bamboo
+				-TeamCity
+			
+				a) Entornos integrados de desarrollo (IDE)
+					-Para C++ : 
+						-DevC++
+						-Microsoft Visual Studio
+						-QtCreator
+					
+					-Para Java: 
+						-Netbeans
+						-Eclipse
+						-IntelJ IDEA
+						-Oracle JDeveloper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
